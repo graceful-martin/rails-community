@@ -1,0 +1,38 @@
+Write 페이지 <br>
+<style>
+  body {
+      margin: 10 auto;
+  }
+  form {
+      margin: 20px;
+      border: 1px solid gray;
+      width: 300px;
+  }
+  form > ul > li {
+      list-style-type: none;
+      margin: 10px;
+  }
+  input[name="content"] {
+      height: 300px;
+  }
+  .but {
+      width: 230px;
+      height: 200px;
+  }
+</style>
+<form method="post" action="/create">
+  <ul>
+    <li>
+      <label for="title">제목</label>
+      <input type="text" name="title" placeholder="제목을 입력해주세요.">
+    </li>
+    <li>
+      <label for="content">내용</label>
+      <textarea name="content" cols="30" rows="20" placeholder="내용을 입력해주세요."></textarea>
+    </li>
+    <li>
+      <input type="submit" class="but">
+    </li>
+  </ul>
+</form>
+<a href="/index">뒤로가기</a>
