@@ -1,25 +1,6 @@
-Write 페이지 <br>
-<style>
-  body {
-      margin: 10 auto;
-  }
-  form {
-      margin: 20px;
-      border: 1px solid gray;
-      width: 300px;
-  }
-  form > ul > li {
-      list-style-type: none;
-      margin: 10px;
-  }
-  input[name="content"] {
-      height: 300px;
-  }
-  .but {
-      width: 230px;
-      height: 200px;
-  }
-</style>
+<%= stylesheet_link_tag "postform" %>
+
+새로운 글 작성하기<br>
 <form method="post" action="/create">
   <ul>
     <li>
